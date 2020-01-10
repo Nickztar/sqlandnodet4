@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create post</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        input, textarea {
+            width: 100%;
+            font-size: 1.3rem;
+            display: block;
+            padding: 1%;
+        }
+    </style>
+</head>
+<body>
+    <form action="/create" method="post">
+        <input type="text" name="title" placeholder="Title">
+        <textarea name="content" placeholder="Content"></textarea>
+        <input type="submit" value="Save post">
+    </form>
+</body>
+</html>
